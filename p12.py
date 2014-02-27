@@ -1,5 +1,7 @@
 import sys
 import numpy as np
+import math
+import sets as set
 
 '''
 def generate_triangle_number(n):
@@ -30,36 +32,37 @@ def count_factors(n):
     return(count)
 
 
+#Smarter way of computing factors, much smaller search
+def get_num_of_factors(n):
+    factors = []
+    factors.append(1)
+    # loop to square root as any higher factors can be determined from lower factors
+    for j in range(2, int(math.sqrt(n))+1):
+        if n % j == 0:
+            factors.append(j) # factor
+            factors.append(n/j) # find it's partner
+    factors.append(n)
+    return len(set.Set(factors)) # sorted unique terms
+
+
 def main():
 
-    n = 10000000
-    test = generate_triangle_number(n)
-    factors = count_factors(n)
+    prev=0 
+    i = 0
+    triangle_number = 0
+
+    while True:
+        i += 1
+        triangle_number += i
+        num_factors = get_num_of_factors(triangle_number)
+        if num_factors>=500:
+            print triangle_number
+            break
 
 
-    '''
-    triangle_numbers = generate_list_of_triangle_numbers(n)
-    print(max(triangle_numbers))
-    print('Done computing triangle numbers')
-
-    for i,num in enumerate(triangle_numbers):
-        if i>1000000:
-            test = count_factors(num)
-            print(test, num)
-            if test>500:
-                print (i, num)
-                break
-
-
-'''
-
-
- 
 
 
 
 if __name__ == '__main__':
     #call function that we need
-
-
     sys.exit(main())
