@@ -66,11 +66,10 @@ def make_jump(r,c, val, new_grid):
 
 def take_step(grid):
 
-	m,n = grid.shape
 
 	new_grid = np.zeros((GRID_SIZE, GRID_SIZE))
-	for r in xrange(m):
-		for c in xrange(n):
+	for r in xrange(GRID_SIZE):
+		for c in xrange(GRID_SIZE):
 			#for each cell, need to update new_grid with relevant value
 			val = grid[r,c]
 			if val>0:
@@ -81,8 +80,8 @@ def take_step(grid):
 
 def simulate_flea(r,c):
 	
-	grid = np.zeros((GRID_SIZE, GRID_SIZE))
-	grid[r,c] = 1.0
+	grid = np.ones((GRID_SIZE, GRID_SIZE))
+	#grid[r,c] = 1.0
 
 	#empty_squares=[0]*50
 	for step in xrange(50):
@@ -117,4 +116,3 @@ def main():
 
 if __name__ == '__main__':
 	main()
-
