@@ -1,0 +1,7 @@
+p38 module
+==========
+
+.. automodule:: p38
+    :members:
+    :undoc-members:
+    :show-inheritance:

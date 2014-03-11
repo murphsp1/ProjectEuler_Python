@@ -1,0 +1,7 @@
+p32 module
+==========
+
+.. automodule:: p32
+    :members:
+    :undoc-members:
+    :show-inheritance:

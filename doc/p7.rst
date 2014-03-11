@@ -1,0 +1,7 @@
+p7 module
+=========
+
+.. automodule:: p7
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+p52 module
+==========
+
+.. automodule:: p52
+    :members:
+    :undoc-members:
+    :show-inheritance:

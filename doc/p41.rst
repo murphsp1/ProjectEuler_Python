@@ -1,0 +1,7 @@
+p41 module
+==========
+
+.. automodule:: p41
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+p31 module
+==========
+
+.. automodule:: p31
+    :members:
+    :undoc-members:
+    :show-inheritance:

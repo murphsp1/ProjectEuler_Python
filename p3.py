@@ -1,7 +1,17 @@
+"""
+This script solves problem 3 of Project Euler
+"""
 
 import sys
+import math
+
 
 def prime_sieve(max_val):
+
+    """
+    A very simple, classic prime_sieve function with very little in the way of optimizations
+    Eventually, this needs to get refactored into a helper function module
+    """
     #assume int, returns all primes up to max_val
 
     seive = range(max_val)
@@ -19,8 +29,9 @@ def prime_sieve(max_val):
     seive = filter(None, seive)
     return(seive)
 
+
 def main():
-    import math
+    
     #we could simply compute all prime numbers up to root n
     #and then test each one ...
     n = 600851475143
@@ -33,12 +44,8 @@ def main():
             break
 
 
-
-
 if __name__ == '__main__':
     #call function that we need
-
-
     sys.exit(main())
 
 

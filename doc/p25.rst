@@ -1,0 +1,7 @@
+p25 module
+==========
+
+.. automodule:: p25
+    :members:
+    :undoc-members:
+    :show-inheritance:

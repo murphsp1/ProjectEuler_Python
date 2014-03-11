@@ -1,0 +1,7 @@
+p40 module
+==========
+
+.. automodule:: p40
+    :members:
+    :undoc-members:
+    :show-inheritance:

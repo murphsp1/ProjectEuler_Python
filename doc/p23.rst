@@ -1,0 +1,7 @@
+p23 module
+==========
+
+.. automodule:: p23
+    :members:
+    :undoc-members:
+    :show-inheritance:

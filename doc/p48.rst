@@ -1,0 +1,7 @@
+p48 module
+==========
+
+.. automodule:: p48
+    :members:
+    :undoc-members:
+    :show-inheritance:

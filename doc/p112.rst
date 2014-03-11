@@ -1,0 +1,7 @@
+p112 module
+===========
+
+.. automodule:: p112
+    :members:
+    :undoc-members:
+    :show-inheritance:

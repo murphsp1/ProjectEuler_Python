@@ -1,0 +1,7 @@
+p79 module
+==========
+
+.. automodule:: p79
+    :members:
+    :undoc-members:
+    :show-inheritance:

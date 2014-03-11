@@ -1,0 +1,7 @@
+p104 module
+===========
+
+.. automodule:: p104
+    :members:
+    :undoc-members:
+    :show-inheritance:

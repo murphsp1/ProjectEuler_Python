@@ -1,0 +1,7 @@
+p44 module
+==========
+
+.. automodule:: p44
+    :members:
+    :undoc-members:
+    :show-inheritance:

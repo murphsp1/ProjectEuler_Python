@@ -1,0 +1,7 @@
+p24 module
+==========
+
+.. automodule:: p24
+    :members:
+    :undoc-members:
+    :show-inheritance:

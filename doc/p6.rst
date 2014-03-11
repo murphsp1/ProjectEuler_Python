@@ -1,0 +1,7 @@
+p6 module
+=========
+
+.. automodule:: p6
+    :members:
+    :undoc-members:
+    :show-inheritance:

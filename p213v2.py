@@ -1,3 +1,9 @@
+"""Just testing out the use of sphinx to build out documeentation
+
+.. moduleauthor:: Andrew Carter <andrew@invalid.com>
+
+"""
+
 import numpy as np 
 
 GRID_SIZE = 30
@@ -5,6 +11,10 @@ GRID_SIZE = 30
 
 def make_jump(r,c, val, new_grid):
 
+	"""
+	This is just a test to see how sphinx works 
+	"""
+	
 	if (r>0 and r<GRID_SIZE-1 and c>0 and c<GRID_SIZE-1):
 		val = val/4.0
 		new_grid[r+1,c] += val
@@ -65,6 +75,9 @@ def make_jump(r,c, val, new_grid):
 
 
 def take_step(grid):
+	"""
+	Another test
+	"""
 
 	m,n = grid.shape
 
@@ -80,6 +93,9 @@ def take_step(grid):
 
 
 def simulate_flea(r,c):
+	"""
+	Simulating the flea
+	"""
 	
 	grid = np.zeros((GRID_SIZE, GRID_SIZE))
 	grid[r,c] = 1.0
@@ -94,6 +110,11 @@ def simulate_flea(r,c):
 
 
 def main():
+	"""
+	This function handles the entire simulation
+	"""
+
+
 	#init grid
 	num_fleas = GRID_SIZE*GRID_SIZE
 	grid_game = np.zeros((GRID_SIZE, GRID_SIZE, num_fleas))
@@ -108,10 +129,7 @@ def main():
 			print(flea)
 			grid_game[:,:,flea] = 1-simulate_flea(r,c)
 	
-	#for f in xrange(num_fleas):
-		#print(grid_game[:,:,f])
 	print np.sum(np.sum(np.prod(grid_game, 2)))
-
 
 
 

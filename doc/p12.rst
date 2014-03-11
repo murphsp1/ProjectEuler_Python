@@ -1,0 +1,7 @@
+p12 module
+==========
+
+.. automodule:: p12
+    :members:
+    :undoc-members:
+    :show-inheritance:
